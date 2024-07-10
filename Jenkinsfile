@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        DOCKER_HUB_CREDENTIALS = 'docker-python-web-app' // Your Docker Hub token credentials ID
+        DOCKER_HUB_CREDENTIALS = 'dockerhub-token' // Your Docker Hub token credentials ID
         GIT_CREDENTIALS = 'github-python-web-app' // Your GitHub token credentials ID
         DOCKER_IMAGE = "rosinebelle/pyth:v.1.0"
     }
