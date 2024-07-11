@@ -48,8 +48,8 @@ pipeline {
                         kubectl config set-context --current --user=jenkins-user
 
                         # Apply your Kubernetes manifests (e.g., deployment, service)
-                        kubectl apply -f k8s/deployment.yaml
-                        kubectl apply -f k8s/service.yaml
+                        kubectl apply -f pythonapp.yaml
+                        kubectl apply -f pythonapp.yaml
                         '''
                     }
                 }
