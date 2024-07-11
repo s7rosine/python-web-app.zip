@@ -38,8 +38,8 @@ pipeline {
                sh 'docker push "${DOCKER_IMAGE}"'
             }
         }
-       
-    }stage('Deploy to Kubernetes') {
+        
+        stage('Deploy to Kubernetes') {
             steps {
                 script {
                     withCredentials([string(credentialsId: "${K8S_CREDENTIALS}", variable: 'K8S_TOKEN')]) {
@@ -56,5 +56,4 @@ pipeline {
             }
         }
     }
-}
 }
